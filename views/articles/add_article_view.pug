@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+	form(method='POST', action='/article/add')
+		div.form-group
+			label Title:
+			input.form-control(name='title', type='text')
+		div.form-group
+			label Author:
+			input.form-control(name='author', type='text')
+		div.form-group
+			label Body:
+			textarea.form-control(name='body')
+		input.btn.btn-primary(type='submit', value='Submit')
