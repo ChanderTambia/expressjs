@@ -446,3 +446,68 @@
 2018-04-13T20:10:45.597+0530 I STORAGE  [serviceShutdown] WiredTigerKVEngine shutting down
 2018-04-13T20:10:46.040+0530 I STORAGE  [serviceShutdown] shutdown: removing fs lock...
 2018-04-13T20:10:46.040+0530 I CONTROL  [serviceShutdown] now exiting
+2018-04-16T13:30:17.950+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-04-16T13:30:19.012+0530 I CONTROL  [main] Trying to install Windows service 'MongoDB'
+2018-04-16T13:30:19.013+0530 I CONTROL  [main] There is already a service named 'MongoDB', sleeping and retrying
+2018-04-16T13:31:41.479+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
+2018-04-16T13:31:41.864+0530 I CONTROL  [main] Trying to start Windows service 'MongoDB'
+2018-04-16T13:31:41.865+0530 I CONTROL  [initandlisten] MongoDB starting : pid=5580 port=27017 dbpath=E:\expressjs\mongodata\db 64-bit host=LAPTOP-NI137376
+2018-04-16T13:31:41.865+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-04-16T13:31:41.865+0530 I CONTROL  [initandlisten] db version v3.6.3
+2018-04-16T13:31:41.865+0530 I CONTROL  [initandlisten] git version: 9586e557d54ef70f9ca4b43c26892cd55257e1a5
+2018-04-16T13:31:41.876+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2018-04-16T13:31:41.876+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-04-16T13:31:41.876+0530 I CONTROL  [initandlisten] modules: none
+2018-04-16T13:31:41.876+0530 I CONTROL  [initandlisten] build environment:
+2018-04-16T13:31:41.876+0530 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2018-04-16T13:31:41.877+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-04-16T13:31:41.877+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-04-16T13:31:41.877+0530 I CONTROL  [initandlisten] options: { service: true, storage: { dbPath: "E:\expressjs\mongodata\db", directoryPerDB: true }, systemLog: { destination: "file", logAppend: true, path: "E:\expressjs\mongodata\mongo.log" } }
+2018-04-16T13:31:41.924+0530 I -        [initandlisten] Detected data files in E:\expressjs\mongodata\db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-04-16T13:31:41.925+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3529M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-04-16T13:31:42.345+0530 I STORAGE  [initandlisten] WiredTiger message [1523865702:345558][5580:140732302844240], txn-recover: Main recovery loop: starting at 1/347008
+2018-04-16T13:31:42.520+0530 I STORAGE  [initandlisten] WiredTiger message [1523865702:520023][5580:140732302844240], txn-recover: Recovering log 1 through 2
+2018-04-16T13:31:43.085+0530 I STORAGE  [initandlisten] WiredTiger message [1523865703:85515][5580:140732302844240], txn-recover: Recovering log 2 through 2
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] 
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] 
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] 
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] 
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] ** WARNING: The file system cache of this machine is configured to be greater than 40% of the total memory. This can lead to increased memory pressure and poor performance.
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] See http://dochub.mongodb.org/core/wt-windows-system-file-cache
+2018-04-16T13:31:43.547+0530 I CONTROL  [initandlisten] 
+2018-04-16T13:31:44.354+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'E:/expressjs/mongodata/db/diagnostic.data'
+2018-04-16T13:31:44.374+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-04-16T13:31:44.374+0530 I STORAGE  [initandlisten] Service running
+2018-04-16T13:31:44.485+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53356 #1 (1 connection now open)
+2018-04-16T13:32:03.529+0530 I NETWORK  [conn1] end connection 127.0.0.1:53356 (0 connections now open)
+2018-04-16T13:32:11.730+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:53358 #2 (1 connection now open)
+2018-04-16T13:32:11.749+0530 I NETWORK  [conn2] received client metadata from 127.0.0.1:53358 conn: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.16299" }, platform: "Node.js v8.10.0, LE, mongodb-core: 3.0.4" }
+2018-04-16T16:29:15.223+0530 I NETWORK  [conn2] end connection 127.0.0.1:53358 (0 connections now open)
+2018-04-16T16:29:17.461+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:55262 #3 (1 connection now open)
+2018-04-16T16:29:17.467+0530 I NETWORK  [conn3] received client metadata from 127.0.0.1:55262 conn: { driver: { name: "nodejs", version: "3.0.4" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.16299" }, platform: "Node.js v8.10.0, LE, mongodb-core: 3.0.4" }
+2018-04-16T16:29:20.248+0530 I NETWORK  [conn3] end connection 127.0.0.1:55262 (0 connections now open)
+2018-04-16T16:56:36.823+0530 E STORAGE  [thread4] WiredTiger error (16) [1523877996:823372][5580:140732302844240], log-server: E:\expressjs\mongodata\db\journal\WiredTigerLog.0000000001: file-remove: DeleteFileW: The process cannot access the file because it is being used by another process.
+: Resource device
+2018-04-16T16:56:36.824+0530 E STORAGE  [thread4] WiredTiger error (16) [1523877996:823372][5580:140732302844240], log-server: log archive server error: Resource device
+2018-04-16T16:56:36.824+0530 E STORAGE  [thread4] WiredTiger error (16) [1523877996:823372][5580:140732302844240], log-server: log server error: Resource device
+2018-04-16T16:56:36.824+0530 E STORAGE  [thread4] WiredTiger error (-31804) [1523877996:823372][5580:140732302844240], log-server: the process must exit and restart: WT_PANIC: WiredTiger library panic
+2018-04-16T16:56:36.841+0530 F -        [thread4] Fatal Assertion 28558 at src\mongo\db\storage\wiredtiger\wiredtiger_util.cpp 361
+2018-04-16T16:56:36.841+0530 F -        [thread4] 
+
+***aborting after fassert() failure
+
+
+2018-04-16T16:56:36.868+0530 F -        [WTJournalFlusher] Fatal Assertion 28559 at src\mongo\db\storage\wiredtiger\wiredtiger_util.cpp 64
+2018-04-16T16:56:36.868+0530 F -        [WTJournalFlusher] 
+
+***aborting after fassert() failure
+
+
